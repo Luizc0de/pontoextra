@@ -12,8 +12,32 @@ public class Tela_login {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setLayout(null);
         wallpaper.setBounds(0, 0, 738, 594);
-        userLabel.setBounds(150, 200, 80, 25);
+
+        userLabel.setBounds(220, 255, 55, 25);
+        userLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        userLabel.setOpaque(true);
+        userLabel.setBackground(java.awt.Color.WHITE);
         window.add(userLabel);
+
+        userText.setBounds(280, 255, 165, 25);
+        window.add(userText);
+
+        passwordLabel.setBounds(220, 340, 42, 25);
+        passwordLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passwordLabel.setOpaque(true); 
+        passwordLabel.setBackground(java.awt.Color.WHITE);
+        window.add(passwordLabel);
+
+        passwordText.setBounds(280, 340, 165, 25);
+        window.add(passwordText);
+
+        loginButton.setBounds(280, 410, 80, 25);
+        window.add(loginButton);
+        loginButton.addActionListener(e -> {
+           window.dispose();
+           new Tela_inicial();
+        });
+
         window.add(wallpaper);
         window.setVisible(true);
        

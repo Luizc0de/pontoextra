@@ -10,3 +10,17 @@ window.add(passwordText);
 loginButton.setBounds(10, 80, 80, 25);
 window.add(loginButton);
 window.setVisible(true);
+
+
+
+        loginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                String user = userText.getText();
+                String password = new String(passwordText.getPassword());
+                if (user.equals("admin") && password.equals("admin123")) {
+                    JOptionPane.showMessageDialog(window, "Login bem-sucedido!");
+                } else {
+                    JOptionPane.showMessageDialog(window, "Usuário ou senha incorretos.");
+                }
+            }
+        });
