@@ -1,0 +1,12 @@
+window.add(wallpaper);
+userLabel.setBounds(10, 10, 80, 25);
+window.add(userLabel);
+userText.setBounds(100, 10, 160, 25);
+window.add(userText);
+passwordLabel.setBounds(10, 40, 80, 25);
+window.add(passwordLabel);
+passwordText.setBounds(100, 40, 160, 25);
+window.add(passwordText);
+loginButton.setBounds(10, 80, 80, 25);
+window.add(loginButton);
+window.setVisible(true);
