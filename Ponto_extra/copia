@@ -24,3 +24,25 @@ window.setVisible(true);
                 }
             }
         });
+
+
+
+private void calcular(){
+        String valor2 = display.getText();
+        double resultado = 0;
+        switch(operador){
+            case '+':
+                resultado = Double.parseDouble(valor1) + Double.parseDouble(valor2);
+                break;
+            case '-':
+                resultado = Double.parseDouble(valor1) - Double.parseDouble(valor2);
+                break;
+            case '*':
+                resultado = Double.parseDouble(valor1) * Double.parseDouble(valor2);
+                break;
+            case '/':
+                resultado = Double.parseDouble(valor1) / Double.parseDouble(valor2);
+                break;
+        }
+        display.setText(String.valueOf(resultado));
+    }

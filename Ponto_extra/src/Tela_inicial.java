@@ -1,5 +1,4 @@
 import javax.swing.*;
-
 public class Tela_inicial {
     JFrame window = new JFrame("Tela Inicial");
     JButton calc = new JButton("Calculadora");
@@ -13,16 +12,25 @@ public class Tela_inicial {
 
         calc.setBounds(300, 200, 150, 40);
         window.add(calc);
+        calc.addActionListener(e -> {
+            window.dispose();
+            new Tela_calc();
+        });
 
         notas.setBounds(300, 260, 150, 40);
         window.add(notas);
+        notas.addActionListener(e -> {
+            window.dispose();
+            new Tela_media();
+        });
 
         coversor.setBounds(300, 320, 150, 40);
         window.add(coversor);
+        coversor.addActionListener(e -> {
+            window.dispose();
+            new Tela_conv();
+        });
 
         window.setVisible(true);
     }
-
-
-
 }
