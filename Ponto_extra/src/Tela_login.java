@@ -6,13 +6,13 @@ public class Tela_login {
     JLabel passwordLabel = new JLabel("Senha:");
     JPasswordField passwordText = new JPasswordField(20);
     JButton loginButton = new JButton("Login");
-    JLabel wallpaper = new JLabel(new ImageIcon(getClass().getResource("/wallpaperRE.jpg")));
+    JLabel wallpaper = new JLabel(new ImageIcon(getClass().getResource("/sla1.jpg")));
 
     Tela_login() {
-        window.setSize(738, 594);
+        window.setSize(738, 654);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setLayout(null);
-        wallpaper.setBounds(0, 0, 738, 594);
+        wallpaper.setBounds(0, 0, 738, 854);
         wallpaper.setVisible(true);
 
         userLabel.setBounds(220, 255, 55, 25);

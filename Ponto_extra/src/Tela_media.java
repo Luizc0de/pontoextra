@@ -44,7 +44,6 @@ public class Tela_media {
             window.dispose();
             new Tela_inicial();
         });
-
         window.setVisible(true);
     }
     void calcular_media() {

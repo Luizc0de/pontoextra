@@ -46,7 +46,6 @@ public class Tela_conv {
             window.dispose();
             new Tela_inicial();
         });
-
         window.setVisible(true);
     }
 }
