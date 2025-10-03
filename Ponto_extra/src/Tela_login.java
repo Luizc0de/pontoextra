@@ -12,6 +12,8 @@ public class Tela_login {
         window.setSize(738, 654);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setLayout(null);
+        window.setResizable(false);
+        window.setLocationRelativeTo(null);
         wallpaper.setBounds(0, 0, 738, 854);
         wallpaper.setVisible(true);
 
@@ -36,12 +38,21 @@ public class Tela_login {
         loginButton.setBounds(280, 410, 80, 25);
         window.add(loginButton);
         loginButton.addActionListener(e -> {
-           window.dispose();
-           new Tela_inicial();
+            autenticar();
         });
         
         window.add(wallpaper);
         window.setVisible(true);
        
+    }
+    private void autenticar() {
+        String usuario = userText.getText();
+        String senha = new String(passwordText.getPassword());
+        if (usuario.equals("admin") && senha.equals("1234")) {
+            window.dispose();
+            new Tela_inicial();
+        } else {
+            JOptionPane.showMessageDialog(window, "Usuário ou senha incorretos.");
+        }
     }
 }

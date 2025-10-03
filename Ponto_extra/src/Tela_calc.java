@@ -26,6 +26,8 @@ public class Tela_calc {
         window.setSize(350, 470);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setLayout(null);
+        window.setResizable(false);
+        window.setLocationRelativeTo(null);
         
         display.setHorizontalAlignment(SwingConstants.RIGHT);
         display.setFont(new java.awt.Font("Segoe UI", 0, 24));

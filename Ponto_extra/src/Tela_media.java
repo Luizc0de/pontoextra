@@ -15,6 +15,8 @@ public class Tela_media {
         window.setSize(300, 400);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setLayout(null);
+        window.setResizable(false);
+        window.setLocationRelativeTo(null);
 
         label1.setBounds(20, 20, 100, 25);
         window.add(label1);

@@ -11,6 +11,8 @@ public class Tela_inicial {
         window.setSize(600, 700);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setLayout(null);
+        window.setResizable(false);
+        window.setLocationRelativeTo(null);
        
 
         calc.setBounds(230, 120, 150, 50);
@@ -35,6 +37,10 @@ public class Tela_inicial {
         });
         Imc.setBounds(230, 320, 150, 50);
         window.add(Imc);
+        Imc.addActionListener(e -> {
+            window.dispose();
+            new Tela_imc();
+        });
 
         wallpaper.setBounds(0, -110, 600, 800);
         wallpaper.setVisible(true);
