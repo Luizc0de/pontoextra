@@ -48,13 +48,18 @@ public class Tela_media {
         });
         window.setVisible(true);
     }
-    void calcular_media() {
+   void calcular_media() {
         try {
             double n1 = Double.parseDouble(text1.getText());
             double n2 = Double.parseDouble(text2.getText());
             double n3 = Double.parseDouble(text3.getText());
             double media = (n1 + n2 + n3) / 3;
-            resultado.setText("Resultado: " + String.format("%.2f", media));
+            if (media >= 6) {
+                resultado.setText("Resultado: " + String.format("%.2f", media)+" Aprovado!");
+            } else {
+                resultado.setText("Resultado: " + String.format("%.2f", media)+" Reprovado.");
+            }
+           
         } catch (NumberFormatException e) {
             resultado.setText("Por favor, insira números válidos.");
         }
